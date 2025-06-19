@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperture | The Definitive Digital Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="fluid-canvas"></canvas>
+    <div class="loader"><div class="loader-shape-wrapper"><div class="loader-shape"></div></div></div>
+
+    <header class="main-header">
+        <a href="#" class="logo">Aperture</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#interactive-grid">Interact</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-switcher"><div class="toggle-button"><div class="toggle-circle"></div></div></div>
+    </header>
+
+    <main>
+        <section id="hero" class="parallax-hero-section">
+            <div class="hero-sticky-content">
+                <div class="hero-text-content"><h1><span>Create reports,</span><span>dashboards &</span><span>consolidations</span></h1><p>Now with AI-insights</p></div>
+                <div class="parallax-card card-1" data-speed-x="-0.3" data-speed-y="0.8"><img src="https://placehold.co/400x300/18181b/9ca3af?text=Expenses" alt="UI Card"></div>
+                <div class="parallax-card card-2" data-speed-x="-0.5" data-speed-y="1.2"><img src="https://placehold.co/500x400/18181b/9ca3af?text=Total+Income" alt="UI Card"></div>
+                <div class="parallax-card card-3" data-speed-x="0.4" data-speed-y="0.9"><img src="https://placehold.co/450x550/18181b/9ca3af?text=Cashflow" alt="UI Card"></div>
+                <div class="parallax-card card-4" data-speed-x="0.6" data-speed-y="1.1"><img src="https://placehold.co/300x450/18181b/9ca3af?text=P&L" alt="UI Card"></div>
+                <div class="parallax-card card-5" data-speed-x="0" data-speed-y="0.85"><img src="https://placehold.co/500x350/18181b/9ca3af?text=Invoices" alt="UI Card"></div>
+            </div>
+        </section>
+
+        <section id="capabilities" class="capabilities-section">
+            <div class="container">
+                <h2 class="section-title">Unparalleled Capabilities</h2>
+                <div class="tabs-container">
+                    <div class="tab-triggers">
+                        <div class="tab-indicator"></div>
+                        <button class="tab-trigger active" data-tab="billing"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"></path><path d="M12 18a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path></svg><span>Billing</span></button>
+                        <button class="tab-trigger" data-tab="charging"><svg viewBox="0 0 24 24"><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H2v13a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6h-6zm-2-2h-4V4h4v0zM4 8h16v11H4V8z"></path><path d="M9 14h6v2H9z"></path></svg><span>Charging</span></button>
+                        <button class="tab-trigger" data-tab="catalog"><svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zM4 11h16v2H4zM4 16h16v2H4z"></path></svg><span>Catalog</span></button>
+                        <button class="tab-trigger" data-tab="events"><svg viewBox="0 0 24 24"><path d="M16 2l4 4-4 4M10 20H4V4h6M16 12l4-4-4-4M10 12H4"></path></svg><span>Events</span></button>
+                    </div>
+                    <div class="tab-content-wrapper">
+                        <div class="tab-pane active" data-tab="billing"><div class="pane-text"><h3>Real-Time Convergent Billing</h3><p>Instantaneous, accurate billing across all services and payment methods.</p></div><div class="pane-visual"><img src="https://placehold.co/600x400/171717/db2777?text=Billing+UI" alt="Billing UI"></div></div>
+                        <div class="tab-pane" data-tab="charging"><div class="pane-text"><h3>Online Charging System</h3><p>AI-powered insights that predict customer needs and drive personalized experiences.</p></div><div class="pane-visual"><img src="https://placehold.co/600x400/171717/ca8a04?text=Charging+UI" alt="Charging UI"></div></div>
+                        <div class="tab-pane" data-tab="catalog"><div class="pane-text"><h3>Dynamic Product Catalog</h3><p>Intuitive tools that empower customers to manage their accounts with ease.</p></div><div class="pane-visual"><img src="https://placehold.co/600x400/171717/65a30d?text=Catalog+UI" alt="Catalog UI"></div></div>
+                        <div class="tab-pane" data-tab="events"><div class="pane-text"><h3>Complex Event Processing</h3><p>Analyze millions of events per second to trigger real-time actions and offers.</p></div><div class="pane-visual"><img src="https://placehold.co/600x400/171717/22d3ee?text=Events+UI" alt="Events UI"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interactive-grid" class="interactive-grid-section">
+            <div id="three-canvas-container"></div>
+            <div class="grid-section-title"><h2>Interact with the Abstract</h2><p>A demonstration of real-time 3D rendering and physics on the web.</p></div>
+        </section>
+        
+        <section id="work" class="work-section">
+            <div class="work-sticky-wrapper">
+                <div class="work-horizontal-container">
+                    <!-- **FIX:** Replaced broken image links with new, stable ones -->
+                    <div class="work-slide" data-bg-color-dark="#E11D48" data-bg-color-light="#FECDD3"><div class="work-slide-content"><div class="work-info"><h3>Project Zenith</h3><p>An immersive e-commerce platform for a luxury fashion brand.</p></div><div class="work-visual oribe-hover"><video src="https://cdn.dribbble.com/userupload/10317378/file/original-b930a086f6753f2c5108873528f8b3c6.mp4" muted loop playsinline></video><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=800" alt="Project Zenith"></div></div></div>
+                    <div class="work-slide" data-bg-color-dark="#0891B2" data-bg-color-light="#A5F3FC"><div class="work-slide-content"><div class="work-info"><h3>Chromaverse</h3><p>A WebGL-powered data visualization tool for a leading biotech firm.</p></div><div class="work-visual oribe-hover"><video src="https://cdn.dribbble.com/userupload/9691991/file/original-46927907572d131f13b6559336d37010.mp4" muted loop playsinline></video><img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80&w=800" alt="Project Chromaverse"></div></div></div>
+                    <div class="work-slide" data-bg-color-dark="#65A30D" data-bg-color-light="#D9F99D"><div class="work-slide-content"><div class="work-info"><h3>Momentum</h3><p>A cross-platform mobile app for a disruptive fintech startup.</p></div><div class="work-visual oribe-hover"><video src="https://cdn.dribbble.com/userupload/9964654/file/original-84b72647c7c31d10a221295b741029c7.mp4" muted loop playsinline></video><img src="https://images.unsplash.com/photo-1607743386760-88ac62b89b8a?auto=format&fit=crop&q=80&w=800" alt="Project Momentum"></div></div></div>
+                </div>
+                <div class="project-counter-wrapper"><span class="project-counter">01</span></div>
+                <div class="diagonal-wipe"></div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                 <h2 class="section-title">Voices of Partnership</h2>
+                 <div class="testimonial-drift-space">
+                    <div class="testimonial-group">
+                        <div class="testimonial-card" style="--z: -15; --x: -25; --y: 10; --s: 0.9;"><p>"Aperture is in a league of its own. They are true masters of digital craft, delivering work that is both breathtakingly beautiful and strategically sound."</p><span>CEO, Project Zenith</span></div>
+                        <div class="testimonial-card" style="--z: 5; --x: 30; --y: -5; --s: 1.05;"><p>"The collaborative process was seamless. It felt like they were an extension of our own team, just with superpowers."</p><span>Founder, Chromaverse</span></div>
+                        <div class="testimonial-card" style="--z: -8; --x: 0; --y: 35; --s: 0.95;"><p>"They exceeded every metric we set and created a product that our users genuinely love. An absolute game-changer for us."</p><span>VP of Product, Momentum</span></div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+             <div class="container"><h2>Let's build the future,<br>together.</h2><a href="mailto:start@aperture.studio" class="cta-button">Start a Conversation</a></div>
+        </section>
+    </main>
+
+    <footer class="main-footer"><p>© 2024 Aperture Studio.</p></footer>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="importmap">{ "imports": { "three": "https://cdn.skypack.dev/three@0.128.0" } }</script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
